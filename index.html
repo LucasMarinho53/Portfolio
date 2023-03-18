@@ -8,8 +8,14 @@
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/color-1.css">
+    <link rel="stylesheet" class="alternate-style" title="color-1" href="css/color-1.css" >
+    <link rel="stylesheet" class="alternate-style" title="color-2" href="css/color-2.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="color-3" href="css/color-3.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="color-4" href="css/color-4.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="color-5" href="css/color-5.css" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
 </head>
-<body>
+<body class="dark">
 
     <header class="header">
         <div class="container">
@@ -28,18 +34,20 @@
         <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
         <div class="nav-menu-inner">
             <ul>
-                <li><a href="#" class="inner-shadow active">Home</a></li>
-                <li><a href="#" class="outer-shadow hover-in-shadow">Quem sou</a></li>
-                <li><a href="#" class="outer-shadow hover-in-shadow">Serviços</a></li>
-                <li><a href="#" class="outer-shadow hover-in-shadow">Portfólio</a></li>
-                <li><a href="#" class="outer-shadow hover-in-shadow">Testemunhas</a></li>
-                <li><a href="#" class="outer-shadow hover-in-shadow">Contato</a></li>
+                <li><a href="#home" class="link-item inner-shadow active">Home</a></li>
+                <li><a href="#about" class="link-item outer-shadow hover-in-shadow">Quem sou</a></li>
+                <li><a href="#services" class="link-item outer-shadow hover-in-shadow">Serviços</a></li>
+                <li><a href="#portfolio" class="link-item outer-shadow hover-in-shadow">Portfólio</a></li>
+                <li><a href="#testimonial" class="link-item outer-shadow hover-in-shadow">Testemunhas</a></li>
+                <li><a href="#contact" class="link-item outer-shadow hover-in-shadow">Contato</a></li>
             </ul>
         </div>
         <p class="copyright-text">&copy; 2023 Lucas França Marinho</p>
+
+        <div class="fade-out-effect"></div>
     </nav>
 
-    <section class="home-section section">
+    <section class="home-section section active" id="home">
 
         <div class="effect-wrap">
             <div class="effect effect-1"></div>
@@ -59,7 +67,7 @@
                     <p>Olá</p>
                     <h2>Sou Lucas</h2>
                     <h1>Programador & Desenvolvedor</h1>
-                    <a href="#" class="btn-1 outer-shadow hover-in-shadow">Mais sobre mim</a>
+                    <a href="#about" class="link-item btn-1 outer-shadow hover-in-shadow">Mais sobre mim</a>
                 </div>
                 <div class="home-img">
                     <div class="img-box inner-shadow">
@@ -70,7 +78,7 @@
         </div>
     </section>
 
-    <section class="about-section section">
+    <section class="about-section section" id="about">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -93,7 +101,7 @@
                 <div class="about-info">
                     <p><span>Olá! Meu nome é Lucas França Marinho e sou desenvolvedor web e programador. </span>Tenho formação técnica em informática pelo curso Senac e atualmente estou cursando Engenharia de Software na faculdade Estácio, onde estou no 5° período. Possuo inglês avançado, o que me permite trabalhar com projetos internacionais.</p> <p>Como desenvolvedor web, tenho experiência em diversas linguagens e frameworks, como HTML, CSS, JavaScript, React, Node.js, Angular e Python. Além disso, possuo habilidades em desenvolvimento de aplicações móveis para Android e iOS.</p> <p>Sou uma pessoa proativa e dedicada, sempre em busca de aprendizado e novas tecnologias. Procuro me manter atualizado em tendências e soluções inovadoras para oferecer o melhor resultado aos meus clientes.</p> <p>Estou animado para colaborar com projetos desafiadores e contribuir para o sucesso dos mesmos. Se você estiver procurando por um desenvolvedor web apaixonado por tecnologia e disposto a crescer junto com sua equipe, por favor entre em contato. Será um prazer discutir suas necessidades e encontrar a melhor solução para você.</p>
                     <a href="cv.pdf" class="btn-1 outer-shadow hover-in-shadow">Download Currículo</a>
-                    <a href="#" class="btn-1 outer-shadow hover-in-shadow">Entre em Contato</a>
+                    <a href="#contact" class="link-item btn-1 outer-shadow hover-in-shadow">Entre em Contato</a>
                 </div>
             </div>
         </div>
@@ -182,7 +190,7 @@
 
     </section>
 
-    <section class="service-section section">
+    <section class="service-section section" id="services">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -249,7 +257,7 @@
         </div>
     </section>
 
-    <section class="portfolio-section section">
+    <section class="portfolio-section section" id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -369,7 +377,7 @@
         </div>
     </section>
 
-    <section class="testimonial-section section">
+    <section class="testimonial-section section" id="testimonial">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -378,7 +386,7 @@
             </div>
             <div class="row">
                 <div class="testi-box">
-                    <div class="testi-slider">
+                    <div class="testi-slider outer-shadow">
                         <div class="testi-slider-container outer-shadow">
                             <div class="testi-item">
                                 <i class="fas fa-quote-left left"></i>
@@ -405,7 +413,7 @@
         </div>
     </section>
 
-    <section class="contact-section section">
+    <section class="contact-section section" id="contact">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -514,6 +522,25 @@
         </div>
     </div>
 
+    <div class="style-switcher outer-shadow">
+        <div class="style-switcher-toggler s-icon outer-shadow hover-in-shadow">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon outer-shadow hover-in-shadow">
+            <i class="fas"></i>
+        </div>
+
+        <h4>Temas de Cores</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+
     <script src="js/main.js"></script>
+    <script src="js/style-switcher.js"></script>
 </body>
 </html>
